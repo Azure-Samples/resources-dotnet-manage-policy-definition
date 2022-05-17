@@ -13,25 +13,24 @@ extensions:
 
  Azure PolicyDefinition sample for managing policy definitions -
  - Create a policy definition
- - Update a policy definition
  - Create another policy definition
  - List policy definitions
  - Delete policy definitions.
 
-
 ## Running this Sample ##
 
-To run this sample:
+To run this sample, first you need to set up a way to authenticate to Azure with Azure Identity.
 
-Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-libraries-for-net/blob/master/AUTH.md).
+Some options are:
+- Through the [Azure CLI Login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).
+- Via [Visual Studio](https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#authenticating-via-visual-studio).
+- Setting [Environment Variables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/resourcemanager/Azure.ResourceManager/docs/AuthUsingEnvironmentVariables.md).
 
-    git clone https://github.com/Azure-Samples/resources-dotnet-manage-policy-definition.git
-
-    cd resources-dotnet-manage-policy-definition
-
-    dotnet build
-
-    bin\Debug\net452\ManagePolicyDefinition.exe
+```bash
+git clone https://github.com/Azure-Samples/resources-dotnet-manage-policy-definition.git
+cd resources-dotnet-manage-policy-definition
+dotnet run
+```
 
 ## More information ##
 
