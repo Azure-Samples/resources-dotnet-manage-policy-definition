@@ -14,7 +14,6 @@ namespace ManagePolicyDefinition
         /**
         * Azure PolicyDefinition sample for managing policy definitions -
         * - Create a policy definition
-        * - Update a policy definition
         * - Create another policy definition
         * - List policy definitions
         * - Delete policy definitions.
