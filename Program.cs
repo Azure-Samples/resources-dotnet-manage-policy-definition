@@ -39,6 +39,8 @@ namespace ManagePolicyDefinition
                     PolicyRule = BinaryData.FromString(policyRuleJson),
                     PolicyType = PolicyType.Custom,
                 };
+                // this operation returns an ArmOperation which is used to track the status of an operation that might take a long time
+                // by passing `WaitUntil.Completed` will automatically make the function to wait for the completion of this operation
                 var lro = await subscription.GetSubscriptionPolicyDefinitions().CreateOrUpdateAsync(WaitUntil.Completed, policyDefinitionName1, policyDefinitionData);
                 var policyDefinition = lro.Value;
 
